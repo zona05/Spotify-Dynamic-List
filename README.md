@@ -23,8 +23,8 @@ To use this project, you need the following:
 
 Clone the repository:
 ```bash
-git clone https://github.com/your_username/spotify-dynamic-playlist.git
-cd spotify-dynamic-playlist
+git clone https://github.com/your_username/spotify-dynamic-list.git
+cd spotify-dynamic-list
 ```
 Install dependencies:
 ```
