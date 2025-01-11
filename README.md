@@ -1,46 +1,53 @@
 # Dynamic Spotify Playlist Generator
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/1200px-Spotify_logo_without_text.svg.png" width="200" />
 
-🎵 **Generador Dinámico de Playlist en Spotify** 🎶
+🎵 **Dynamic Spotify Playlist Generator** 🎶
 
-Este proyecto personal utiliza la API de Spotify para crear una **playlist dinámica** a partir de las canciones favoritas del usuario. El script selecciona géneros de música aleatorios, filtra los géneros con al menos 10 canciones, y actualiza o crea una nueva playlist en Spotify con canciones del género seleccionado. 
+This personal project uses the Spotify API to create a **dynamic playlist** based on the user's favorite songs. The script selects random music genres, filters genres with at least 10 songs, and updates or creates a new playlist on Spotify with songs from the selected genre.
 
-## 🚀 Características 
+## 🚀 Features
 
-- **Autenticación segura** con Spotify mediante OAuth.
-- **Filtrado de géneros**: Solo géneros con al menos 10 canciones favoritas.
-- **Creación o actualización** de una playlist llamada "Dynamic Playlist". 
-- **Automatización diaria** a través de GitHub Actions para generar una nueva playlist cada día.
+- **Secure authentication** with Spotify using OAuth.
+- **Genre filtering**: Only genres with at least 10 favorite songs.
+- **Creation or update** of a playlist named "Dynamic Playlist."
+- **Daily automation** via GitHub Actions to generate a new playlist every day.
 
-## 🔧 Requisitos
+## 🔧 Requirements
 
-Para poder usar este proyecto, necesitas tener lo siguiente:
- 
-- Una cuenta de **Spotify**.
-- Un proyecto creado en [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/applications) para obtener tus credenciales de la API.
-## 🛠️ Instalación
-Clona el repositorio:
+To use this project, you need the following:
+
+- A **Spotify** account.
+- A project created on the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/applications) to obtain your API credentials.
+
+## 🛠️ Installation
+
+Clone the repository:
 ```bash
-git clone https://github.com/tu_usuario/spotify-dynamic-playlist.git
+git clone https://github.com/your_username/spotify-dynamic-playlist.git
 cd spotify-dynamic-playlist
 ```
-Instala las dependencias:
-```bash
+Install dependencies:
+```
+bash
+Copiar código
 pip install -r requirements.txt
 ```
-Ejecuta el script:
-```bash
+Run the script:
+```
+bash
+Copiar código
 python SpotifyDynamic.py
 ```
-## 📜 Uso
-Una vez que hayas configurado las credenciales API dentro del script e instalado las dependencias, simplemente ejecuta el script.
-## ⚙️ Flujo de Trabajo
-El script obtiene las canciones favoritas del usuario.
-Filtra los géneros que tienen al menos 10 canciones.
-Selecciona un género aleatorio y actualiza la playlist "Dynamic Playlist".
-Si la playlist no existe, la crea automáticamente.
-## 🔑 Autenticación
-Este proyecto utiliza Spotify OAuth para autenticar al usuario. Asegúrate de haber configurado correctamente tus credenciales de cliente en el Spotify Developer Dashboard y de haber autorizado el acceso a tu cuenta de Spotify.
+## 📜 Usage
+Once you've set up the API credentials within the script and installed the dependencies, simply run the script.
 
-## 📅 Programación Automática
-Este proyecto está configurado para ejecutarse automáticamente todos los días a medianoche (horario UTC), lo que te permitirá disfrutar siempre de una playlist actualizada con un nuevo género aleatorio cada día.
+## ⚙️ Workflow
+The script fetches the user's favorite songs.
+Filters genres that have at least 10 songs.
+Selects a random genre and updates the "Dynamic Playlist."
+If the playlist does not exist, it creates it automatically.
+## 🔑 Authentication
+This project uses Spotify OAuth to authenticate the user. Make sure to correctly configure your client credentials in the Spotify Developer Dashboard and authorize access to your Spotify account.
+
+## 📅 Automated Scheduling
+This project is set to run automatically every day at midnight (UTC), ensuring you always have an updated playlist featuring a new random genre daily.
