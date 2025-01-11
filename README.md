@@ -22,20 +22,16 @@ To use this project, you need the following:
 ## 🛠️ Installation
 
 Clone the repository:
-```bash
+```
 git clone https://github.com/your_username/spotify-dynamic-list.git
 cd spotify-dynamic-list
 ```
 Install dependencies:
 ```
-bash
-Copiar código
 pip install -r requirements.txt
 ```
 Run the script:
 ```
-bash
-Copiar código
 python SpotifyDynamic.py
 ```
 ## 📜 Usage
