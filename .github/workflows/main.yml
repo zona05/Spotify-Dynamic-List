@@ -1,5 +1,7 @@
 name: Ejecutar Script Diario
 on:
+  schedule:
+    - cron: '0 23 * * *'
   push:
     branches:
       - master
